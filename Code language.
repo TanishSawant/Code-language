@@ -1,0 +1,30 @@
+def translate(phrase):
+
+    translate = ""
+
+    for letter in phrase :
+        if letter in "aA":
+            translate =  translate + "i" + "bd"
+        elif letter in "eE":
+            translate =  translate + "u" + "fh"
+        elif letter in "iI":
+            translate =  translate + "o" + "jn"
+        elif letter in "oO":
+            translate =   translate + "e" + "pt"
+        elif letter in "uU":
+            translate =   translate + "vz"
+
+        else:
+            translate =  translate + letter
+
+    return translate
+
+def main():
+
+        phrase = input("Ënter a phrase : ")
+
+        print(translate(phrase).lower())
+
+
+
+main()
